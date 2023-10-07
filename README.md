@@ -16,7 +16,6 @@ __________________________________
 > The website title dynamically changes with JavaScript, creating a visually appealing effect.
 ```javascript
 // Example from index.html
-// Example from index.html
 (function titleScroller(text) {
     document.title = text;
     setTimeout(function () {
