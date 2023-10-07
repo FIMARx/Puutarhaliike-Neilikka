@@ -10,7 +10,6 @@ __________________________________
 - Navigation Bar:
 > A stylish navigation bar with a colored active window for easy navigation throughout the website.
 - Website Icon:
-> - Website icon
 > A custom website icon (favicon) for a distinctive and recognizable brand representation.
 - Dynamic Title:
 > The website title dynamically changes with JavaScript, creating a visually appealing effect.
@@ -29,6 +28,8 @@ __________________________________
 > Information about the shop's working schedule, providing important details for visitors.
 - Contact Form:
 > An interactive contact form, enabling visitors to reach out to the shop easily.
+- Custom Scroll Bar:
+> An aesthetically designed custom scroll bar for a unique browsing experience.
 
 ## 🚀 Getting Started
 To get a local copy up and running, follow these steps:
