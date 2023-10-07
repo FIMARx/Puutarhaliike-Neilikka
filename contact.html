@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puutarhaliike Neilikka</title>
+    <script>(function titleScroller(text) {
+            document.title = text;
+            setTimeout(function () {
+                titleScroller(text.substr(1) + text.substr(0, 1));
+            }, 300);
+        }(document.title + " | Ota yhteyttä - "));
+    </script>
+    <link rel="icon" type="image/x-icon" href="ico.ico">
+    <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><i class="fa-solid fa-leaf"></i> Puutarhaliike Neilikka</div>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn" class="teal"/>
+        <ul>
+            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Etusivu</a></li>
+            <li>
+                <label label for="btn-1" class="show"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Tuotteet <i
+                        class="fa-solid fa-angle-down"></i></label>
+                <a href="products.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Tuotteet <i
+                        class="fa-solid fa-angle-down"></i></a>
+                <input type="checkbox" id="btn-1" class="teal"/>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-pagelines"></i> Sisäkasvit</a></li>
+                    <li><a href="#"><i class="fa-solid fa-sun-plant-wilt"></i> Ulkokasvit</a></li>
+                    <li><a href="#"><i class="fa-solid fa-screwdriver-wrench"></i> Työkalut</a></li>
+                    <li><a href="#"><i class="fa-solid fa-seedling"></i> Kasvien hoito</a></li>
+                </ul>
+            </li>
+            <li><a href="stores.html"><i class="fa-solid fa-shop"></i> Myymälät</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> Tietoa meistä</a></li>
+            <li class="active"><a href="contact.html"><i class="fa-solid fa-address-book"></i> Ota yhteyttä</a></li>
+        </ul>
+    </nav>
+    <div class="container">  
+      <form id="contact" action="form_submitted.php" method="post">
+        <h3><i class="fa-regular fa-address-book"></i> Ota yhteyttä</h3>
+        <fieldset>
+          <input placeholder="Nimi" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Sähköposti" type="email" tabindex="2" required>
+        </fieldset>
+        <div class="form-group">
+          <p style="font-size: 25px;"><i class="fa-solid fa-chevron-right"></i> Aihe</p>
+          <select id="dropdown" name="role" required class="form-control">
+              <option disabled selected value>Kysymys tuotteista</option>
+              <option value="student">Tilaus</option>
+              <option value="job">Yhteydenottopyyntö </option>
+              <option value="learner">Muu </option>
+          </select>
+      </div>
+      <br> <!-- TOLOL -->
+        <fieldset>
+          <textarea placeholder="Kirjoita viestisi tänne..." tabindex="5" required></textarea>
+        </fieldset>
+        <div class="form-group">
+          <p style="font-size: 15px;">Haluan tilata Puutarhaliike Neilikan uutiskirjeen</p>
+          <label>
+              <input type="checkbox" name="check" onclick="onlyOne(this)" value="front-end-projects" class="input-checkbox">
+              Kyllä
+          </label>
+          <label>
+              <input type="checkbox" name="check" onclick="onlyOne(this)" value="back-end-projects" class="input-checkbox">
+              Ei
+          </label>
+      </div>
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Lähetä <i class="fa-regular fa-paper-plane"></i></button>
+        </fieldset>
+      </form>
+    </div>
+    <div class="yhteys2">
+      <h1><i class="fa-solid fa-file-signature"></i> Voit ottaa meihin yhteyttä</h1>
+    </div>
+    <p class="p1"><i class="fa-solid fa-1"></i> - <i class="fa-solid fa-up-long"></i> Yllä olevalla lomakkeella</p>
+    <p class="p1"><i class="fa-solid fa-2"> - </i> <i class="fa-solid fa-phone-volume"></i> puhelimitse yksittäisiin myymälöihin</p>
+    <p class="p1"><i class="fa-solid fa-3"> - </i> <i class="fa-solid fa-envelope-open-text"></i> sähköpostitse: asiakaspalvelu@puutarhaliikeneilikka.fi</p>
+    <div class="footer-basic">
+        <footer>
+            <hr style="height:2px;border-width:0;color:azure;background-color:rgba(68, 255, 0, 0.64)">
+            <p class="copyright">Puutarhaliike Neilikka <i class="fa-regular fa-copyright"></i> 2022</p>
+        </footer>
+    </div>
+</body>
+<script>
+  function onlyOne(checkbox) {
+    var checkboxes = document.getElementsByName('check')
+    checkboxes.forEach((item) => {
+        if (item !== checkbox) item.checked = false
+    })
+}
+</script>
+<script src="main.js"></script>
+<script src="https://kit.fontawesome.com/00bba88349.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+</html>

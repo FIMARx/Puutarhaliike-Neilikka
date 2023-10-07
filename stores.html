@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puutarhaliike Neilikka</title>
+    <script>(function titleScroller(text) {
+            document.title = text;
+            setTimeout(function () {
+                titleScroller(text.substr(1) + text.substr(0, 1));
+            }, 300);
+        }(document.title + " | Myymälät - "));
+    </script>
+    <link rel="icon" type="image/x-icon" href="ico.ico">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><i class="fa-solid fa-leaf"></i> Puutarhaliike Neilikka</div>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn" />
+        <ul>
+            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Etusivu</a></li>
+            <li>
+                <label label for="btn-1" class="show"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Tuotteet <i
+                        class="fa-solid fa-angle-down"></i></label>
+                <a href="products.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Tuotteet <i
+                        class="fa-solid fa-angle-down"></i></a>
+                <input type="checkbox" id="btn-1" />
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-pagelines"></i> Sisäkasvit</a></li>
+                    <li><a href="#"><i class="fa-solid fa-sun-plant-wilt"></i> Ulkokasvit</a></li>
+                    <li><a href="#"><i class="fa-solid fa-screwdriver-wrench"></i> Työkalut</a></li>
+                    <li><a href="#"><i class="fa-solid fa-seedling"></i> Kasvien hoito</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="stores.html"><i class="fa-solid fa-shop"></i> Myymälät</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> Tietoa meistä</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-address-book"></i> Ota yhteyttä</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="shop">
+            <h1 class="shopi"><i class="fa-solid fa-shop"></i> Myymälät</h1>
+            <p class="aukio" style="text-align: center;"><i class="fa-solid fa-location-dot"></i> Puutarhaliike
+                Neilikka, Helsinki</p>
+            <p><i class="fa-solid fa-location-crosshairs"></i> Fabianinkatu 42</p>
+            <p><i class="fa-solid fa-signs-post"></i> 00100 Helsinki</p>
+            <p><i class="fa-solid fa-phone"></i> Puh. xx-xxxxxxx</p>
+            <p><i class="fa-regular fa-envelope"></i> Sähköposti: helsinki@puutarhaliikeneilikka.fi</p>
+        </div>
+    </section>
+    <section class="openinghours">
+        <div class="openinghourscontent section">
+            <div class="header">
+                <h2>Aukioloajat</h2>
+            </div>
+            <table class="opening-hours-table">
+                <tr id="Monday" itemprop="openingHours">
+                    <td>Maanantai</td>
+                    <td class="opens">09:00</td>
+                    <td>-</td>
+                    <td class="closes">17:00</td>
+                </tr>
+                <tr id="Tuesday" itemprop="openingHours">
+                    <td>Tiistai</td>
+                    <td class="opens">09:00</td>
+                    <td>-</td>
+                    <td class="closes">17:00</td>
+                </tr>
+                <tr id="Wednesday" itemprop="openingHours">
+                    <td>Keskiviikko</td>
+                    <td class="opens">07:00</td>
+                    <td>-</td>
+                    <td class="closes">17:00</td>
+                </tr>
+                <tr id="Saturday" itemprop="openingHours">
+                    <td>Lauantai</td>
+                    <td class="opens">12:00</td>
+                    <td>-</td>
+                    <td class="closes">18:00</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section>
+        <div class="shop">
+            <p class="aukio" style="text-align: center;"><i class="fa-solid fa-location-dot"></i> Puutarhaliike
+                Neilikka, Espoo</p>
+            <p><i class="fa-solid fa-location-crosshairs"></i> Kivenlahdentie 10</p>
+            <p><i class="fa-solid fa-signs-post"></i> 01234 Espoo</p>
+            <p><i class="fa-solid fa-phone"></i> Puh. xx-xxxxxxx</p>
+            <p><i class="fa-regular fa-envelope"></i> Sähköposti: espoo@puutarhaliikeneilikka.fi</p>
+        </div>
+    </section>
+    <section class="openinghours">
+        <div class="openinghourscontent section">
+            <div class="header">
+                <h2>Aukioloajat</h2>
+            </div>
+            <table class="opening-hours-table">
+                <tr id="Monday" itemprop="openingHours">
+                    <td>Maanantai</td>
+                    <td class="opens">09:00</td>
+                    <td>-</td>
+                    <td class="closes">17:00</td>
+                </tr>
+                <tr id="Tuesday" itemprop="openingHours">
+                    <td>Tiistai</td>
+                    <td class="opens">09:00</td>
+                    <td>-</td>
+                    <td class="closes">17:00</td>
+                </tr>
+                <tr id="Wednesday" itemprop="openingHours">
+                    <td>Keskiviikko</td>
+                    <td class="opens">07:00</td>
+                    <td>-</td>
+                    <td class="closes">17:00</td>
+                </tr>
+                <tr id="Saturday" itemprop="openingHours">
+                    <td>Lauantai</td>
+                    <td class="opens">12:00</td>
+                    <td>-</td>
+                    <td class="closes">18:00</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <div class="footer-basic">
+        <footer>
+            <hr style="height:2px;border-width:0;color:azure;background-color:rgba(68, 255, 0, 0.64)">
+            <p class="copyright">Puutarhaliike Neilikka <i class="fa-regular fa-copyright"></i> 2022</p>
+        </footer>
+    </div>
+</body>
+<script src="main.js"></script>
+<script src="https://kit.fontawesome.com/00bba88349.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+</html>
