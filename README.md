@@ -1,6 +1,6 @@
 ># 🏡 Puutarhaliike Neilikka
 Puutarhaliike Neilikka Website made by HTML, CSS and JAVASCRIP
-- `The PHP handler is not included ❌`
+- `The PHP handler is not working ❌`
 
 This GitHub project contains the source code for the Puutarhaliike Neilikka website. Puutarhaliike Neilikka is a fictional gardening and plant shop, and this project showcases the HTML, CSS, and JavaScript used to build the website. Explore the code to understand the structure and design of their online platform.
 __________________________________
