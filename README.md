@@ -8,37 +8,37 @@ __________________________________
 
 ## 📖 Features
 - Navigation Bar:
-> A stylish navigation bar with a colored active window for easy navigation throughout the website.
+    > A stylish navigation bar with a colored active window for easy navigation throughout the website.
 - Website Icon:
-> A custom website icon (favicon) for a distinctive and recognizable brand representation.
+    > A custom website icon (favicon) for a distinctive and recognizable brand representation.
 - Dynamic Title:
-> The website title dynamically changes with JavaScript, creating a visually appealing effect.
-```javascript
-// Example from index.html
-(function titleScroller(text) {
-    document.title = text;
-    setTimeout(function () {
-        titleScroller(text.substr(1) + text.substr(0, 1));
-    }, 300);
-}(document.title + " | Kotisivu - "));
-```
+    > The website title dynamically changes with JavaScript, creating a visually appealing effect.
+    ```javascript
+    // Example from index.html
+    (function titleScroller(text) {
+        document.title = text;
+        setTimeout(function () {
+            titleScroller(text.substr(1) + text.substr(0, 1));
+        }, 300);
+    }(document.title + " | Kotisivu - "));
+    ```
 - Shop Section:
-> Display of products with prices and special offers to entice customers.
+    > Display of products with prices and special offers to entice customers.
 - Working Schedule:
-> Information about the shop's working schedule, providing important details for visitors.
+    > Information about the shop's working schedule, providing important details for visitors.
 - Contact Form:
-> An interactive contact form, enabling visitors to reach out to the shop easily.
+    > An interactive contact form, enabling visitors to reach out to the shop easily.
 - Custom Scroll Bar:
-> An aesthetically designed custom scroll bar for a unique browsing experience.
+    > An aesthetically designed custom scroll bar for a unique browsing experience.
 
 ## 🚀 Getting Started
 To get a local copy up and running, follow these steps:
 
-1. Clone the repository to your local machine.
-2. Open the project in your preferred code editor.
-3. Explore the HTML, CSS, and JavaScript files to understand the website's structure and functionality.
-4. Modify and experiment with the code to suit your needs.
-- Feel free to contribute by suggesting improvements through pull requests.
+    1. Clone the repository to your local machine.
+    2. Open the project in your preferred code editor.
+    3. Explore the HTML, CSS, and JavaScript files to understand the website's structure and functionality.
+    4. Modify and experiment with the code to suit your needs.
+    - Feel free to contribute by suggesting improvements through pull requests.
 __________________________________
 # 🖼️ Showcase
 ![image](https://github.com/FIMARx/Puutarhaliike_Neilikka/assets/69573290/c2b3bf32-384e-4ffe-8b24-6904445434a8)
